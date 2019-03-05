@@ -1,0 +1,258 @@
+body {
+  font-family: sans-serif;
+}
+h3 {
+  font: 400 1.4em/1.2 sans-serif;
+  margin-bottom: 1.25em;
+}
+
+.switch {
+  position: absolute;
+  top: 1rem;
+  left: 12rem;
+  border: 1px solid;
+  padding: 0.6rem;
+  background: none;
+  outline: none;
+  border-radius: 5px;
+}
+.switch:active {
+  background: grey;
+}
+.info {
+  position: absolute;
+  top: 1.8rem;
+  left: 11.5rem;
+  font: 100 12px/1.2 sans-serif;
+  color: #ccc;
+}
+
+input:focus {
+  outline-offset: 0;
+  outline-width: 1px;
+  outline-color: inherit;
+  border-radius: none;
+  border: none;
+}
+input,
+.floatContainer {
+  width: 100%;
+  font-size: 1em;
+  line-height: 1.5em;
+  margin: 0;
+  padding: 0;
+  outline: none;
+  border: none;
+  -webkit-appearance: none;
+}
+.floatContainer {
+  position: relative;
+  margin: 1.5em 0;
+  box-sizing: border-box;
+}
+.floatContainer input:focus + label {
+  color: rgba(0, 0, 0, 1);
+}
+.floatContainer input {
+  display: block;
+  background: #fff;
+  height: 2.75rem;
+  font-size: 1.15em;
+  text-indent: 0.7em;
+  box-shadow: 0 0 0 1px;
+  -webkit-box-shadow: 0 0 0 1px;
+  border-radius: 4px;
+  padding-top: 0.15em;
+  transition: box-shadow 0.4s ease 0.15s;
+}
+.floatContainer.error input {
+  box-shadow: 0 0 0 1px tomato;
+  -webkit-box-shadow: 0 0 0 1px tomato;
+}
+.floatContainer.error input:focus + label {
+  color: tomato;
+}
+.inline-error {
+  display: block;
+  opacity: 0;
+  height: 0em;
+  line-height: 0;
+  transition: all 0.4s ease 0.5s;
+  color: tomato;
+  font: 400 0.75em/1 sans-serif;
+  margin-left: 0.95em;
+}
+.floatContainer.error .inline-error {
+  opacity: 1;
+  height: 1em;
+  line-height: 1;
+  margin-top: 0.75em;
+}
+
+.floatContainer label {
+  display: block;
+  position: absolute;
+  top: 0.85em;
+  left: 0.785em;
+  color: #808080;
+  font-size: 1rem;
+  z-index: 1;
+  padding: 0 10px;
+  margin: 0 calc(50% - 50vw);
+  transform-origin: 0 -6rem;
+  transition: all 0.2s ease;
+}
+.floating label {
+  transform: scale(0.75, 0.75);
+  background: rgb(255, 255, 255);
+}
+
+/* SET 2 
+ *
+ */
+
+.floatContainer.two {
+  position: relative;
+  margin: 1.2em 0;
+  box-sizing: border-box;
+}
+.floatContainer.two input {
+  display: block;
+  background: #ddd;
+  height: 2.1rem;
+  font-size: 0.9em;
+  text-indent: 1.05em;
+  box-shadow: 0 -1px 0 0 black inset;
+  border-radius: 6px 6px 0 0;
+  padding-top: 1.4rem;
+  transition: box-shadow 0.4s ease 0.15s;
+}
+.floatContainer.two.floating input:focus + label {
+  color: rgb(197, 59, 128);
+}
+.floatContainer.two label {
+  display: block;
+  position: absolute;
+  top: 1.2rem;
+  left: 0.785em;
+  color: rgb(30, 30, 30);
+  font-size: 1rem;
+  z-index: 1;
+  padding: 0 10px;
+  margin: 0 calc(50% - 50vw);
+  transform-origin: 0.65rem -1.4rem;
+  transition: all 0.2s ease;
+}
+.floatContainer.two.floating label {
+  transform: scale(0.65, 0.65);
+  background: none;
+}
+.floatContainer.two input:focus {
+  box-shadow: 0 -2px 0 0 rgb(197, 59, 128) inset;
+}
+.floatContainer.two.error input {
+  box-shadow: 0 -2px 0 0px tomato inset;
+}
+
+/* SET 3
+ *
+ */
+.floatContainer.three {
+  position: relative;
+  margin: 1.2em 0;
+  box-sizing: border-box;
+}
+.floatContainer.three input {
+  display: block;
+  background: none;
+  height: 2.1rem;
+  font-size: 0.9em;
+  text-indent: 1.05em;
+  box-shadow: 0 -1px 0 0 black inset;
+  border-radius: 6px 6px 0 0;
+  padding-top: 1.4rem;
+  transition: box-shadow 0.4s ease 0.15s;
+}
+.floatContainer.three.floating input:focus + label {
+  color: rgb(197, 59, 128);
+}
+.floatContainer.three label {
+  display: block;
+  position: absolute;
+  top: 1.2rem;
+  left: 0.785em;
+  color: rgb(30, 30, 30);
+  font-size: 1rem;
+  z-index: 1;
+  padding: 0 10px;
+  margin: 0 calc(50% - 50vw);
+  transform-origin: 0.65rem -1.4rem;
+  transition: all 0.2s ease;
+}
+.floatContainer.three.floating label {
+  transform: scale(0.65, 0.65);
+  background: none;
+}
+.floatContainer.three input:focus {
+  box-shadow: 0 -2px 0 0 rgb(197, 59, 128) inset;
+}
+.floatContainer.three.error input {
+  box-shadow: 0 -2px 0 0px tomato inset;
+}
+
+/* SET 4
+ *
+ */
+
+.floatContainer.four {
+  position: relative;
+  margin: 3.5em auto;
+  width: 90%;
+  padding-right: 5px;
+  box-sizing: border-box;
+}
+.floatContainer.four input {
+  display: block;
+  background: none;
+  height: 2rem;
+  font-size: 1em;
+  text-indent: 0;
+  box-shadow: 0 -1px 0 0 black inset;
+  border-radius: 0;
+  padding: 0;
+  transition: box-shadow 0.4s ease 0.15s;
+}
+.floatContainer.four.floating input:focus + label {
+  color: black;
+}
+.floatContainer.four label {
+  display: block;
+  position: absolute;
+  top: -1.5em;
+  left: 0;
+  color: rgb(30, 30, 30);
+  font-size: 1rem;
+  z-index: 1;
+  padding: 0;
+  margin: 0;
+  transform-origin: none;
+  transition: none;
+}
+.floatContainer.four.floating label {
+  transform: none;
+  background: none;
+}
+.floatContainer.four input:focus {
+  box-shadow: 0 -1px 0 0 black inset;
+}
+.floatContainer.four.error input {
+  box-shadow: 0 -1px 0 0px black inset;
+}
+.floatContainer.four.error input:focus + label {
+  color: black;
+}
+.floatContainer.four .inline-error {
+  display: none;
+  opacity: 0;
+  height: 0;
+}
